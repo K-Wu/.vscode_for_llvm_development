@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make -j",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "dependsOn": "build",
+            "label": "test",
+            "type": "shell",
+            "command": "/usr/local/bin/opt <tests-original/X86/addsub.ll -load-pass-plugin=build/pass/libSLPVectorizer-kdw.so -passes=slpvect-kdw -S 1>tests/Output/dump.log",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+} 

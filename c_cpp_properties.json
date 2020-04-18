@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "includePath": [
+                "/home/kunwu2/llvm-8.0.1.src/include/"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/opt/rh/devtoolset-7/root/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
