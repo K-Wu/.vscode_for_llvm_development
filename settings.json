@@ -54,6 +54,10 @@
         "streambuf": "cpp",
         "thread": "cpp",
         "cinttypes": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "buildTree_rec.casedef": "cpp",
+        "vectorizeTree_rec.casedef": "cpp",
+        "*.casedef": "cpp",
+        "forward_list": "cpp"
     }
 }

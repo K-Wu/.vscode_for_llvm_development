@@ -15,7 +15,7 @@
             "dependsOn": "build",
             "label": "test",
             "type": "shell",
-            "command": "/usr/local/bin/opt <tests-original/X86/addsub.ll -load-pass-plugin=build/pass/libSLPVectorizer-kdw.so -passes=slpvect-kdw -S 1>tests/Output/dump.log",
+            "command": "/usr/local/bin/opt <tests/add.ll -load build/pass/libSLPVectorizer-kdw.so -slpvect-kdw -S 1>tests/Output/dump.log 2>tests/Output/dump2.log",
             "problemMatcher": [],
             "group": {
                 "kind": "test",
